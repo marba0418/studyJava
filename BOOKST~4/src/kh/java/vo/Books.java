@@ -4,14 +4,16 @@ public class Books {
 	
 	private String name;
 	private String writer;
+	private String genre;
 	private int price;
 	private int stock;
 	
 	public Books() {}
 	
-	public Books(String name, String writer, int price, int stock) {
+	public Books(String name, String writer, String genre, int price, int stock) {
 		this.name=name;
 		this.writer=writer;
+		this.genre=genre;
 		this.price=price;
 		this.stock=stock;
 	}
@@ -22,6 +24,14 @@ public class Books {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	public String getGenre() {
+		return genre;
+	}
+	
+	public void setGenre(String genre) {
+		this.genre = genre;
 	}
 
 	public String getWriter() {
