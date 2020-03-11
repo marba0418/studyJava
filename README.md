@@ -51,6 +51,14 @@
 
 -외래키 칼럼 뒤에 작성하는 방법 -> BOARD_WRITER VARCHAR(20) REFERENCES MEMBERS(MEMBER_ID)
 
+[PRIMARY KEY]
+
+-테이블에서 한 행의 정보를 구분하기 위한 고유 식별자(IDENTIFIER)의 역할
+
+-NOT NULL과 UNIQUE의 의미 둘 다 가지고 있음
+
+
+
 [FOREIGN KEY]
 
 -참조 무결성을 유지하기 위한 조건 
