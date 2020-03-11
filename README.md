@@ -1,6 +1,6 @@
 3월 11일 수(날씨 좋음)
 
-DML(DATE MANIPULATION LANGUAGE)
+[DML(DATE MANIPULATION LANGUAGE)]
 -실제로 많이 씀 
 
 -데이터 조작 언어
@@ -11,7 +11,7 @@ DML(DATE MANIPULATION LANGUAGE)
 
 DELETE: 행 개수 감소 (꼭 WHERE 절 넣기)
 
-TRANSCATION
+[TRANSCATION]
 
 -굉장히 중요함
 
@@ -24,3 +24,5 @@ TRANSCATION
 -하나의 작업으로 보겠다.
 
 -만약 과정 중 에러가 발생한다면? 하나의 덩어리로 보고 (작업단위로 보고) 취소처리,에러가 발생하지 않다면 완료처리
+
+-SAVE POINT 임시저장 
