@@ -26,3 +26,11 @@ DELETE: 행 개수 감소 (꼭 WHERE 절 넣기)
 -만약 과정 중 에러가 발생한다면? 하나의 덩어리로 보고 (작업단위로 보고) 취소처리,에러가 발생하지 않다면 완료처리
 
 -SAVE POINT 임시저장 
+
+-COMMIT은 저장해주는 개념으로 생각하면 됨 ROLLBACK은 가장 최근 COMMIT한 곳으로 데려가줌
+
+-테이블에 DML구문이 동작했을때 TRANSCATION실행
+
+-INSERT,UPDATE,DELETE,(SELECT때는 필요 없음 자료가 바뀌는 것이 아니니까)
+
+-SAVAPOINT 임시 저장 시점을 잡음
