@@ -1,17 +1,59 @@
-3월 11일 수(날씨 좋음)
+ 3월 11일 수(날씨 좋음)
+[TEST]
+
+[제약조건 CONSTRAINT]
+
+-사용자가 원하는 조건의 데이터만 유지하기 위해서 특정칼럼에 설정하는 제약
+
+-데이터의 무결성을 지키기 위해 제한된 조건 
+
+*무결성 DATA INTEGRITY(청렴) : 데이터의 정확성,일관성 유지,보증하는 것을 가리킨다.
+
+-SUBQUERY :SELECT 안에 또 SELECT문장..!
+
+-사용자 계정 생성을 나타내는 USER -> CREATE USER EXAM IDENTIFIED BY 1234;
+
+-외래키 칼럼 뒤에 작성하는 방법 -> BOARD_WRITER VARCHAR(20) REFERENCES MEMBERS(MEMBER_ID)
+
+[FOREIGN KEY]
+
+-참조 무결성을 유지하기 위한 조건 
+
+-만약 로그인시 멤버에서 값을 가져와야 한다면 멤버에서만 가져와야 한다. 이런 말을 참조 무결성이라고 한다.
+
+-즉 , 데이터 신뢰도를 높인다고 생각하면 된다.
+
+[DDL (Data Definition Language)]
+
+-데이터 정의 언어 
+
+-CREATE(객체를 만들고)
+
+-ALTER(수정하고)-> CREATE로 정의된 내용을 수정할 때 사용
+
+-DROP(삭제하는)
+
+*TRUNCATE :해당 테이블을 전체 삭제
 
 [DML(DATE MANIPULATION LANGUAGE)]
+
 -실제로 많이 씀 
 
 -데이터 조작 언어
 
 -테이블에 값을 삽입,수정, 삭제 하는 역할
 
--INSERT(삽입),UPDATE(수정),DELETE(삭제)
+-INSERT(삽입): 테이블에 새로운 행을 추가
+
+-UPDATE(수정): 테이블에 기록된 컬럼의 값을 수정하는 구문
+
+-DELETE(삭제): (테이블) 행을 삭제하는 구문
+
+-MERGE(합치기):(구조가 같은) 테이블을 하나로 합치는 기능
 
 DELETE: 행 개수 감소 (꼭 WHERE 절 넣기)
 
-[TRANSCATION]
+[TCL TRANSCATION CONTROL LANGUAGE]
 
 -굉장히 중요함
 
