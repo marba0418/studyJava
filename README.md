@@ -55,6 +55,16 @@ DELETE: 행 개수 감소 (꼭 WHERE 절 넣기)
 
 [TCL TRANSCATION CONTROL LANGUAGE]
 
+-트랜젝션 제어 언어
+
+- 한꺼번에 수행되야하는 최소의 작업단위
+
+-COMMIT -> 변경 내용을 저장
+
+-ROLLBACK -> 최근 COMMIT 시점으로 이동
+
+-SAVEPOINT -> 현재 트랜작업 시점의 이름을 지정(약간 임시저장이라고 생각하면 편함)
+
 -굉장히 중요함
 
 -후에 자바에서 TRANSCATION 으로 인해 클래스 하나 더 
