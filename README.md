@@ -1,5 +1,41 @@
  3월 11일 수(날씨 좋음)
+
 [TEST]
+
+[SQL STRUCTURED QUERY LANGUAGE]
+
+-관계형 데이터베이스에서 데이터를 조회하거나 조작하기 위해 사용하는 표준검색 언어
+
+[SQL 문법 종류]
+
+[DDL (DATA DEFINITION LANGUAGE)]
+
+-데이터 정의 할때 씀
+
+-명령어는 CREATE,DROP,ALTER,TRUNCATE
+
+[DML (DATA MANIPULATION LANGUAGE)]
+
+-데이터 조회/ 데이터 조작 
+
+-조회는 SELECT
+
+-조작은 INSERT,UPDATE,DELETE
+
+[DCL (DATA CONTROL LANGUAGE)]
+
+-권한 설정
+
+-명령어는  GRANT(부여),REVOKE(취소)
+
+[TCL (TRANSATION CONTROL LANGUAGE)]
+
+-TRANSATION연속적인 작업으로 구성되는 정보처리
+
+-트랜잭션 제어
+
+-명령어는 COMMMIT,ROLLBACK,SAVEPOINT
+
 
 [제약조건 CONSTRAINT]
 
