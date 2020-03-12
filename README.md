@@ -6,22 +6,14 @@
 - SQL STRUCTURED QUERY LANGUAGE
   - 관계형 데이터베이스에서 데이터를 조회하거나 조작하기 위해 사용하는 표준검색 언어
 
-[SQL 문법 종류]
-
-[DDL (DATA DEFINITION LANGUAGE)]
-
--데이터 정의 할때 씀
-
--명령어는 CREATE,DROP,ALTER,TRUNCATE
-
-[DML (DATA MANIPULATION LANGUAGE)]
-
--데이터 조회/ 데이터 조작 
-
--조회는 SELECT
-
--조작은 INSERT,UPDATE,DELETE
-
+- SQL 문법 종류
+- DDL (DATA DEFINITION LANGUAGE)
+  - 데이터 정의 할때 씀
+  - 명령어는 CREATE,DROP,ALTER,TRUNCATE
+- DML (DATA MANIPULATION LANGUAGE)
+  - 데이터 조회/ 데이터 조작 
+  - 조회는 SELECT
+  - 조작은 INSERT,UPDATE,DELETE
 [DCL (DATA CONTROL LANGUAGE)]
 
 -권한 설정
@@ -195,6 +187,24 @@ CREATE SEQUENCE 시퀀스 이름
 
 1) START WITH 숫자 : 처음 발생시킬 시작값(기본1)
 
-2) [INCREMENT BY 숫자]: 다음 값에 대한 증가치 (기본1)
+2) INCREMENT BY 숫자: 다음 값에 대한 증가치 (기본1)
 
-3) [MAXVALUE 숫자| NOMAXVALUE] :최대값 지정
+3) MAXVALUE 숫자| NOMAXVALUE :최대값 지정
+
+-ALTER SEQUENCE 로 수정
+
+- 만약 INSERT 실패하더라도 번호는 다음 번호로 넘어간다.  
+
+-START WITH 는 수정이 안된다 (수정하려면 새로 SEQUENCE 실행해야 함)
+
+-삭제 하려면? DROP SEQUENCE 시퀀스명;
+- INDEX
+  - 명령문 처리 속도를 향상시키기 위해 컬럼에 대해 생성하는 오라클 객체
+  - 장점 : 검색 속도 UP, 시스템 전체 성능 향상(부하 줄여서)
+  - 단점 : 인덱스 위한 추가 저장공간 필요, 인덱스 생성 TIME 필요,데이터 변경작업이 자주 일어하는 경우 효율성 떨어짐
+- SYNONYM(동의어)
+  - 사용자가 다른 사용자의 객체를 참조할 때 [사용자 ID],[테이블명]으로 표기
+  - 비공개/공개동의어
+  - 공개동의어 모든 사용자 사용 가능
+  - 비공개 동의어 :권한을 받아서 사용해야 함 GRANT CREATE SYNONYM TO kh;
+  - 공개 동의어 : 똑같이 다 사용할 수 있게 CREATE PUBLIC SYNONYM DEPT FOR kh.DEPARTMENT;
