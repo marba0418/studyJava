@@ -223,9 +223,21 @@ CREATE SEQUENCE 시퀀스 이름
    - DECLARE
    - MSG VARCHAR2(20);
    - BEGIN  오라클은 := 로 대입함
-   - MSG :='하이';
-   - DBMS_OUTPUT.PUT_LINE(MSG);
+    - SELECT
+    - INTO
+    - FROM
+    - WHERE
+    - MSG :='하이';
+    - DBMS_OUTPUT.PUT_LINE(MSG);
    - END;
    - / 
    - MSG :='&입력';(키보드로 입력받겠다) 만약 ESC누르면 값을 대체하겠다 이런 의미(대체취소)
    - JOIN 시 꼭 LEFT JOIN 쓰기
+  - 변수 종류
+   - 일반 변수 := 대입
+   - 상수: CONSTANT 키워드를 자료형 앞에 붙임
+   - %TYPE :해당 컬럼과 동일한 형태로 나옴(길이 지정안해도됨) 해당 테이블의 컬럼을 가져옴 
+   - %ROWTYPE:
+   - %ROWTYPE을 쓰면 해당 테이블의 모든 데이터를 다 가져옴
+   - RECORDTYPE :자료형을 만들어줌(내가 사용자 정의를 만드는 것) 
+   
