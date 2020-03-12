@@ -203,8 +203,29 @@ CREATE SEQUENCE 시퀀스 이름
   - 장점 : 검색 속도 UP, 시스템 전체 성능 향상(부하 줄여서)
   - 단점 : 인덱스 위한 추가 저장공간 필요, 인덱스 생성 TIME 필요,데이터 변경작업이 자주 일어하는 경우 효율성 떨어짐
 - SYNONYM(동의어)
-  - 사용자가 다른 사용자의 객체를 참조할 때 [사용자 ID],[테이블명]으로 표기
+  - 사용자가 다른 사용자의 객체를 참조할 때 사용자 ID,테이블명으로 표기
   - 비공개/공개동의어
   - 공개동의어 모든 사용자 사용 가능
   - 비공개 동의어 :권한을 받아서 사용해야 함 GRANT CREATE SYNONYM TO kh;
   - 공개 동의어 : 똑같이 다 사용할 수 있게 CREATE PUBLIC SYNONYM DEPT FOR kh.DEPARTMENT;
+- PL/SQL
+  - 오라클 자체에 내장되어 있는 절차적 언어
+  - SQL 단점 보완
+  - SQL 언어를 확장하기 위해 사용
+  - 문법
+   - SET SERVEROUTPUT ON; PL/SQL을 이용한 출력문을 출력하기 위한 설정문
+   - DECLARE 선언부
+   - BEGIN 실행부
+   - EXCEPTION
+   - END;
+   - /(/써야 실행됨)
+  - 변수 만들기(변수 먼저 만듬)
+   - DECLARE
+   - MSG VARCHAR2(20);
+   - BEGIN  오라클은 := 로 대입함
+   - MSG :='하이';
+   - DBMS_OUTPUT.PUT_LINE(MSG);
+   - END;
+   - / 
+   - MSG :='&입력';(키보드로 입력받겠다) 만약 ESC누르면 값을 대체하겠다 이런 의미(대체취소)
+   - JOIN 시 꼭 LEFT JOIN 쓰기
