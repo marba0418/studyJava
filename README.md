@@ -1,10 +1,10 @@
- 3월 11일 수(날씨 좋음)
+ # 강의 내용
+ 
+ ## 3월 11일 수(날씨 좋음)
 
-[TEST]
-
-[SQL STRUCTURED QUERY LANGUAGE]
-
--관계형 데이터베이스에서 데이터를 조회하거나 조작하기 위해 사용하는 표준검색 언어
+- TEST
+- SQL STRUCTURED QUERY LANGUAGE
+  - 관계형 데이터베이스에서 데이터를 조회하거나 조작하기 위해 사용하는 표준검색 언어
 
 [SQL 문법 종류]
 
