@@ -238,6 +238,13 @@ CREATE SEQUENCE 시퀀스 이름
    - 상수: CONSTANT 키워드를 자료형 앞에 붙임
    - %TYPE :해당 컬럼과 동일한 형태로 나옴(길이 지정안해도됨) 해당 테이블의 컬럼을 가져옴 
    - %ROWTYPE:
-   - %ROWTYPE을 쓰면 해당 테이블의 모든 데이터를 다 가져옴
+   - %ROWTYPE을 쓰면 해당 테이블의 모든 데이터를 다 가져옴, 만약 두 테이블 써야 한다면 변수를 하나 더 만들어준다!!
    - RECORDTYPE :자료형을 만들어줌(내가 사용자 정의를 만드는 것) 
-   
+   - DELETE는 테이블 일부를 담을 수 있음
+  - PL/SQL 선택문(제어문이라고 생각하면됨)
+   - PL/SQL의 모든 문장들은 기술한 순서대로 순차적으로 수행
+   - PL/SQL 선택문 종류
+    - 1. IF~THEN~END IF문(자바의 IF문) : IF문으로 시작해서 END IF 꼭 써줌 (안써주면 IF문이 안끝남 END가 안됨)
+    - 2. IF~THEN~ELSE~END IF(ESLE IF문) 만약 ~라면 만약 ~가 아니라면
+    - 3. IF~ ELSIF~ELSE END IF
+    - 4. CASE WHEN~THEN WHEN~THEN~ ELSE(자바 디폴트) ~END CASE
