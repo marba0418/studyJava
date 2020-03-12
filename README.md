@@ -123,128 +123,102 @@ DELETE: 행 개수 감소 (꼭 WHERE 절 넣기)
 
 -SAVAPOINT 임시 저장 시점을 잡음
 
-3월 12일 목 
+## 3월 12일 목(날씨 좋음)
+
 
 *AS는 복사라는 의미 뒤에 SELECT 옴
 
  - SELECT연산자 
   - 비교연산자
   - = 같다
-  - >, < 크다/작다
-  - >=, =< 크거나 같다/작거나 같다
-  - <> , !=, ^= 같지 않다.
+  -  '>', < 크다/작다
+  -  '>=', =< 크거나 같다/작거나 같다
+  -  <> , !=, ^= 같지 않다.
   - BETWEEN AND 특정 범위에 포함되는지 비교
   - LIKE/ NOT LIKE 문자 패턴 비교
   - IS NULL/ IN NOT NULL NULL여부 비교
   - IN/ NOT IN 비교값 목록에 포함/미포함 여부 
 
-[OBJECT]
+ - OBJECT
+  - 자바랑 비슷
+  - 4~5개 정도 배움
 
--자바랑 비슷
-
--4~5개 정도 배움
-
-[VIEW]
-
--SELECT 쿼리 실행 결과를 화면에 저장한 논리적인 가상 테이블
-
--원본 테이블에 링크 개념으로 들어가 있음
-
--VIEW 생성 권한
-
--관리자 계정 접속후 (ADMIN) GRANT CREATE VIEW TO KH;
-
--VIEW 만드는 방법
-
--CREATE VIEW EMP_VIEW AS SELECT 컬럼들 FROM 테이블;
-
--뷰는 컬럼 값을 참조  링크로 가져온 것임(이경우 업데이트시 자료 반영 됨)
-
--복사는 복사해서 가져오는 것(업데이트시 자료 반영 안됨, 단순히 복사만 한 것임)
-
--왜 쓸까? 선택된 정보만 사용자에게 보여주기 위해, 사용자 접근시 테이블에 접근하지 않고 선택된 정보만 볼 수 있게 하려고
-
--(일부 제한된 정보만 주게 하려고)
-
--GRANT SELECT ON kh.EMP_VIEW TO test01; 조회할 수 있는 권한을 부여한다. EMP 접근 권한 아님 뷰에만 접근 권한 줌
-
-- test01에서 SELECT* FROM kh.EMP_VIEW; 입력
-
--뷰에서 DML명령어 조작이 안되는 경우
-
--가공된 데이터들은 조작이 불가능
-
--즉 뷰의 컬럼과 테이블의 컬럼이 직접적으로 연관된 경우에만 사용이 가능
-
-(VIEW 옵션)
-
--CREATE OR REPLACE: 생성된 뷰가 없으면 새로 만들고 이미 만들어져 있으면 바꿔짐(대신 이전 데이터는 사라짐)
-
--FORCE :테이블 없어도 뷰는 만들어짐 (나중에 테이블 만들면 자동으로 연결됨) 실제로 거의 안쓰임
-
--WITH CHECK OPTION 옵션을 설정한 컬럼의 값은 수정 안됨(하나의 컬럼만 가능)
-
--WITH READ ONLY:조회만 가능 (범위: 뷰 전체,CHECK는 컬럼만)
-
-[SEQUENCE] 우리도 많이 씀
-
--자동 번호 발생기 역할을 한다고 생각하면 됨
-
-- 순차적으로 정수 값을 자동으로 생성하는 객체로 ,자동 번호 발생기 역할 당연히 기본값은 1
-
-(표현)
-
-CREATE SEQUENCE 시퀀스 이름
-
-1) START WITH 숫자 : 처음 발생시킬 시작값(기본1)
-
-2) INCREMENT BY 숫자: 다음 값에 대한 증가치 (기본1)
-
-3) MAXVALUE 숫자| NOMAXVALUE :최대값 지정
-
--ALTER SEQUENCE 로 수정
-
-- 만약 INSERT 실패하더라도 번호는 다음 번호로 넘어간다.  
-
--START WITH 는 수정이 안된다 (수정하려면 새로 SEQUENCE 실행해야 함)
-
--삭제 하려면? DROP SEQUENCE 시퀀스명;
-- INDEX
+ - VIEW
+  - SELECT 쿼리 실행 결과를 화면에 저장한 논리적인 가상 테이블
+  - 원본 테이블에 링크 개념으로 들어가 있음
+ - VIEW 생성 권한
+  - 관리자 계정 접속후 (ADMIN) GRANT CREATE VIEW TO KH;
+ - VIEW 만드는 방법
+  - CREATE VIEW EMP_VIEW AS SELECT 컬럼들 FROM 테이블;
+ - VIEW는 컬럼 값을 참조링크로 가져온 것임(이경우 업데이트시 자료 반영 됨)
+  - 복사는 복사해서 가져오는 것(업데이트시 자료 반영 안됨, 단순히 복사만 한 것임)
+  - 왜 쓸까? 선택된 정보만 사용자에게 보여주기 위해, 사용자 접근시 테이블에 접근하지 않고 선택된 정보만 볼 수 있게 하려고
+  - (일부 제한된 정보만 주게 하려고)
+ - GRANT SELECT ON kh.EMP_VIEW TO test01; 조회할 수 있는 권한을 부여한다. EMP 접근 권한 아님 뷰에만 접근 권한 줌
+  - test01에서 SELECT* FROM kh.EMP_VIEW; 입력
+ - VIEW에서 DML명령어 조작이 안되는 경우
+  - 가공된 데이터들은 조작이 불가능
+  - 즉 VIEW의 컬럼과 테이블의 컬럼이 직접적으로 연관된 경우에만 사용이 가능
+ - VIEW 옵션
+  - CREATE OR REPLACE: 생성된 뷰가 없으면 새로 만들고 이미 만들어져 있으면 바꿔짐(대신 이전 데이터는 사라짐)
+  - FORCE :테이블 없어도 뷰는 만들어짐 (나중에 테이블 만들면 자동으로 연결됨) 실제로 거의 안쓰임
+  - WITH CHECK OPTION 옵션을 설정한 컬럼의 값은 수정 안됨(하나의 컬럼만 가능)
+  - WITH READ ONLY:조회만 가능 (범위: 뷰 전체,CHECK는 컬럼만)
+ - SEQUENCE 우리도 많이 씀
+  - 자동 번호 발생기 역할을 한다고 생각하면 됨
+  - 순차적으로 정수 값을 자동으로 생성하는 객체로 ,자동 번호 발생기 역할 당연히 기본값은 1
+ - 표현
+  - CREATE SEQUENCE 시퀀스 이름
+  - 1) START WITH 숫자 : 처음 발생시킬 시작값(기본1)
+  - 2) INCREMENT BY 숫자: 다음 값에 대한 증가치 (기본1)
+  - 3) MAXVALUE 숫자| NOMAXVALUE :최대값 지정
+  - 4) MINVALUE 숫자| NOMINVALUE :최소값 지정
+  - 5) CYCLE| NOCYCLE :SEQUENCE 최대값 도달시 CYCLE은 START WITH값으로 되돌아가고 NOCYCLE은 에러
+  - 6) CACHE| NOCACHE :메모리상에서 시퀀스값 관리(기본 20)
+ - SEQUENCE 사용법
+  - 시퀀스명.CURRVAL :현재 시퀀스 값 반환
+  - 시퀀스명.NEXTVAL :현재 시퀀스의 다음 값 반환
+  - 시퀀스의 첫 시작 값은 없으므로 CURRVAL사용 전에 반드시 NEXTVAL을 1번 이상 사용해야 함
+ - ALTER SEQUENCE 로 수정
+  - 만약 INSERT 실패하더라도 번호는 다음 번호로 넘어간다.  
+  - START WITH 는 수정이 안된다 (수정하려면 새로 SEQUENCE 실행해야 함)
+  - 삭제 하려면? DROP SEQUENCE 시퀀스명;
+ - INDEX
   - 명령문 처리 속도를 향상시키기 위해 컬럼에 대해 생성하는 오라클 객체
   - 장점 : 검색 속도 UP, 시스템 전체 성능 향상(부하 줄여서)
   - 단점 : 인덱스 위한 추가 저장공간 필요, 인덱스 생성 TIME 필요,데이터 변경작업이 자주 일어하는 경우 효율성 떨어짐
-- SYNONYM(동의어)
+ - SYNONYM 동의어
   - 사용자가 다른 사용자의 객체를 참조할 때 사용자 ID,테이블명으로 표기
   - 비공개/공개동의어
   - 공개동의어 모든 사용자 사용 가능
   - 비공개 동의어 :권한을 받아서 사용해야 함 GRANT CREATE SYNONYM TO kh;
   - 공개 동의어 : 똑같이 다 사용할 수 있게 CREATE PUBLIC SYNONYM DEPT FOR kh.DEPARTMENT;
-- PL/SQL
+ - PL, SQL
   - 오라클 자체에 내장되어 있는 절차적 언어
   - SQL 단점 보완
   - SQL 언어를 확장하기 위해 사용
-  - 문법
+ - 문법
    - SET SERVEROUTPUT ON; PL/SQL을 이용한 출력문을 출력하기 위한 설정문
    - DECLARE 선언부
    - BEGIN 실행부
    - EXCEPTION
    - END;
    - /(/써야 실행됨)
-  - 변수 만들기(변수 먼저 만듬)
-   - DECLARE
-   - MSG VARCHAR2(20);
-   - BEGIN  오라클은 := 로 대입함
-    - SELECT
+ - 변수 만들기(변수 먼저 만듬)
+ - DECLARE
+  - MSG VARCHAR2(20);
+ - BEGIN  오라클은 := 로 대입함
+  - SELECT
     - INTO
     - FROM
     - WHERE
     - MSG :='하이';
-    - DBMS_OUTPUT.PUT_LINE(MSG);
-   - END;
-   - / 
-   - MSG :='&입력';(키보드로 입력받겠다) 만약 ESC누르면 값을 대체하겠다 이런 의미(대체취소)
-   - JOIN 시 꼭 LEFT JOIN 쓰기
-  - 변수 종류
+  - DBMS_OUTPUT.PUT_LINE(MSG);
+  - END;
+  - / 
+ - MSG :='&입력';(키보드로 입력받겠다) 만약 ESC누르면 값을 대체하겠다 이런 의미(대체취소)
+  - JOIN 시 꼭 LEFT JOIN 쓰기
+ - 변수 종류
    - 일반 변수 := 대입
    - 상수: CONSTANT 키워드를 자료형 앞에 붙임
    - %TYPE :해당 컬럼과 동일한 형태로 나옴(길이 지정안해도됨) 해당 테이블의 컬럼을 가져옴 
@@ -252,10 +226,10 @@ CREATE SEQUENCE 시퀀스 이름
    - %ROWTYPE을 쓰면 해당 테이블의 모든 데이터를 다 가져옴, 만약 두 테이블 써야 한다면 변수를 하나 더 만들어준다!!
    - RECORDTYPE :자료형을 만들어줌(내가 사용자 정의를 만드는 것) 
    - DELETE는 테이블 일부를 담을 수 있음
-  - PL/SQL 선택문(제어문이라고 생각하면됨)
-   - PL/SQL의 모든 문장들은 기술한 순서대로 순차적으로 수행
-   - PL/SQL 선택문 종류
-    - 1. IF~THEN~END IF문(자바의 IF문) : IF문으로 시작해서 END IF 꼭 써줌 (안써주면 IF문이 안끝남 END가 안됨)
-    - 2. IF~THEN~ELSE~END IF(ESLE IF문) 만약 ~라면 만약 ~가 아니라면
-    - 3. IF~ ELSIF~ELSE END IF
-    - 4. CASE WHEN~THEN WHEN~THEN~ ELSE(자바 디폴트) ~END CASE
+ - PL ,SQL 선택문(제어문이라고 생각하면됨)
+  - PL,SQL의 모든 문장들은 기술한 순서대로 순차적으로 수행
+ - PL,SQL 선택문 종류
+  - 1. IF~THEN~END IF문(자바의 IF문) : IF문으로 시작해서 END IF 꼭 써줌 (안써주면 IF문이 안끝남 END가 안됨)
+  - 2. IF~THEN~ELSE~END IF(ESLE IF문) 만약 ~라면 만약 ~가 아니라면
+  - 3. IF~ ELSIF~ELSE END IF
+  - 4. CASE WHEN~THEN WHEN~THEN~ ELSE(자바 디폴트) ~END CASE
