@@ -127,6 +127,17 @@ DELETE: 행 개수 감소 (꼭 WHERE 절 넣기)
 
 *AS는 복사라는 의미 뒤에 SELECT 옴
 
+ - SELECT연산자 
+  - 비교연산자
+  - = 같다
+  - >, < 크다/작다
+  - >=, =< 크거나 같다/작거나 같다
+  - <> , !=, ^= 같지 않다.
+  - BETWEEN AND 특정 범위에 포함되는지 비교
+  - LIKE/ NOT LIKE 문자 패턴 비교
+  - IS NULL/ IN NOT NULL NULL여부 비교
+  - IN/ NOT IN 비교값 목록에 포함/미포함 여부 
+
 [OBJECT]
 
 -자바랑 비슷
