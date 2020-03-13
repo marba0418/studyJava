@@ -233,3 +233,23 @@ DELETE: 행 개수 감소 (꼭 WHERE 절 넣기)
   - 2. IF~THEN~ELSE~END IF(ESLE IF문) 만약 ~라면 만약 ~가 아니라면
   - 3. IF~ ELSIF~ELSE END IF
   - 4. CASE WHEN~THEN WHEN~THEN~ ELSE(자바 디폴트) ~END CASE
+## 3월 13일 금(추움)
+ * SET SERVEROUTPUT ON; 해주기
+ - LOOP
+  - BASIC LOOP 조건 없이 무한대로 반복
+  - DECLARE
+  - I NUMBER := 1;
+  - BEGIN
+  - LOOP
+  - DBMS_OUTPUT.PUT_LINE(I); 
+  - I := I+1; 현재값1에 1을 더함
+  - IF I>5
+  - THEN EXIT;
+  - END IF;
+  - END LOOP; 반복 끝지점
+ - END; 
+ - FOR LOOP 디클레어에서 선언안해도 자동으로 1씩 증가함
+  - DECLARE
+  - BEGIN
+  - FOR I IN REVERSE 1..5 LOOP(거꾸로 내려감)
+  
