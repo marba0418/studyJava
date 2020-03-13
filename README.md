@@ -255,3 +255,23 @@ DELETE: 행 개수 감소 (꼭 WHERE 절 넣기)
  - TRIGGER
    - 데이터베이스가 만족되면 일어나는 행동
    - OLD NEW TRIGGER 만들때 꼭 FOR EACH ROW 써주기
+   - 자동적으로 수행되는 행동
+   - 데이터가 입려,수정,삭제 될 경우 자동으로 실행
+ - TRIGGER 구성 요소
+   - 트리거 실행시점
+     - 이벤트 전 BEFORE/ 후 AFTER
+   - 트리거 이벤트
+     - 어떤 DML(INSERT,UPDATE,DELETE)문 실행했을 때 TRIGGER를 발생시킬 것인지 결정
+   - 몸체
+     - TRIGGER 동작 로직, BEGIN~END 안에 작성
+   - 유형
+     - FOR EACH ROW 문장이 있으면
+       행레벨 트리거: DML에 의해서 여러 개의 행이 변경되면 각 행이 변경될 때마다 TRIGGER를 발생시키는 방법
+     - 없으면?
+       문장레벨 트리거 : DML을 실행하면 TRIGGER가 한번 발생
+ - TRIGGER 바인드 변수
+   - :NEW 새로 입력된 데이터 (INSERT,UPDATE시 존재)
+   - :OLD 기존 데이터
+   - :NEW.컬럼명 ->SQL반영 후의 컬럼 데이터
+   - :OLD.컬럼명 ->SQL반영 전의 컬럼 데이터
+     - DELETE의 경우 삭제이기 때문에 OLD만  
