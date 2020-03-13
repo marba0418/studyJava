@@ -253,5 +253,5 @@ DELETE: 행 개수 감소 (꼭 WHERE 절 넣기)
   - BEGIN
   - FOR I IN REVERSE 1..5 LOOP(거꾸로 내려감)
  - TRIGGER
-  - 데이터베이스가 만족되면 일어나는 행동
-  - OLD NEW TRIGGER 만들때 꼭 FOR EACH ROW 써주기
+   - 데이터베이스가 만족되면 일어나는 행동
+   - OLD NEW TRIGGER 만들때 꼭 FOR EACH ROW 써주기
