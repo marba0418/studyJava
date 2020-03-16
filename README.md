@@ -314,3 +314,12 @@ DELETE: 행 개수 감소 (꼭 WHERE 절 넣기)
    - AI 체크 되어있으면 숫자를 자동으로 만들어주는 시퀀스
    - NULL 체크 되어 있으면 NOT NULL X
      - 다 만들고 ERD모든 테이블 생성 SQL
+     - 외래키 삭제 옵션 따로 지원안해주니 꼭 확인하기
+ - SQL :데이터에서 조회,조작하기 위해 사용하는 표준검색언어
+   - DDL: 데이터를 정의(CREATE:객체생성,DROP삭제 ,ALTER수정,TRUNCATE초기화)
+   - DML: 데이터를 조작(INSERT:데이터를 입력,UPDATE 데이터를 업데이트,DELETE 데이터 로우 삭제)
+     - 앞으로도 많이 쓸 부분(프로젝트를 할때 DDL은 초반에 하고 더 손댈 곳이 없지만,, DML은 많이 씀,데이터 넣고, 리드하고,,)
+   - DCL: 권한설정(GRANT,REVOKE 권한 회수)
+   - TCL: 한번에 처리되어야할 최소단위(EX; ATM) 트랜잭션 제어 (COMMIT,SAVEPOINT)
+ - 뷰, 시퀀스,인덱스,시노임
+ - PL/SQL
