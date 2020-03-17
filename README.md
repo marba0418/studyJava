@@ -262,3 +262,9 @@
    - TCL: 한번에 처리되어야할 최소단위(EX; ATM) 트랜잭션 제어 (COMMIT,SAVEPOINT)
  - 뷰, 시퀀스,인덱스,시노임
  - PL/SQL
+ ## 3월 17일 화(날씨 흐림) 
+- JDBC 자바언어에서 디비에 접근할 수 있게 해주는 API 
+   - DriverManager:오라클 드라이버 연결, 커넥션 해주는 것
+     - 직접 객체 생성 불가 메소드 작성
+   - Statement
+   - ResultSet : select문을 사용한 질의 성공 시 반환되는 객체
