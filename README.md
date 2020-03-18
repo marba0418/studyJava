@@ -268,3 +268,15 @@
      - 직접 객체 생성 불가 메소드 작성
    - Statement
    - ResultSet : select문을 사용한 질의 성공 시 반환되는 객체
+## 3월 18일 수(날씨 좋음)
+- Statement
+  - 1.캐시사용x
+  - select* from member where member_id ='입력값'
+  - select* from member where member_id ='user01'
+  - select* from member where member_id ='user02'
+  
+- PreparedStatement
+  - 2.캐시사용 (임의의 공간에 넣어놨다),보안성 
+  - select* from member where member_id=?
+  - user01,user02
+  - 속도가 더 빠름(구문 분석하는 시간이 짦아져서)
