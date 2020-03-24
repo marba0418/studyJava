@@ -337,4 +337,20 @@
     - file : input type ="file" name ="file" multiple 뒤에 써주면 여러 파일 업로드됨
     - 뒤에 accept 써주면 파일 스타일이 제한됨 ex).gif,.jpg
     - 입력하지 않으면 안넘어가게 함? 뒤에 required 써주면 됨
-                             
+    - label을 써주면 글씨만 클릭해도 창에 바로 커서가 감                         
+    - 날짜 입력 형식 : label date : input type="date" name="date1" /label br
+    - 기타 입력 형식 : 골뱅이 form action ="test.html" method ="get"
+    - label email : input type ="email" name ="email" /label br
+    - input type="submit" value="제출"
+    - /form
+    - 여러가지 값을 표현하는 태그 select name="job" size="4" 하면 전체보기 가능, multiple하면 다중 선택가능
+    - option value='doctor'의사 /option
+    - option value='fire' 불꽃 /option
+    - option value='nothing' selected /option하면 선택됨
+    - /select
+    - 옵션 달아주기 legend차량 종류 선택/legend
+    - select
+    - optgroup label ="외제차"
+    - option value ="bmw3"bmw3/option
+        
+                   
