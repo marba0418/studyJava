@@ -304,3 +304,37 @@
     - 반복되는 아티클을 묶으면 섹션
     - <aside></aside> 사이드바라고 불림, 주로 광고나 링크 모음
     - <footer></footer> :회사정보 들어감
+  - 멀티미디어 태그
+    - <img> 웹페이지에 사진이나 그림 넣을 때 사용하는 태그
+    - gif(움짤들),jpg/jpeg(사진을 위해 개발,저장 반복하다보면 화질 떨어짐),png(네트워크용으로 개발되어 최근 많이 사용)
+    - 닫는 태그 존재 안함
+  - 오디오
+    - controls 꼭 써줘야함 <audio controls autoplay loop src="../mp3/"
+    - poster 재생전 출력 이미지(일종의 썸네일)
+  - 하이퍼링크 태그: 클릭했을 때 다른 사이트로 넘어가는 것(html목적)
+    - href : 링크한 펭이지의 id값이나 사이트 주소 지정 <a href='이동할 페이지 경로'> 링크 표시 문구</a>
+    - target="_blank" 새창을 열어서 이동
+ 
+  - 폼 태그:사용자가 입력한 데이터를 보내는 방식과 처리할 프로그램을 정하는 태그
+    
+    - method: 
+    
+    - get: url창에 데이터를 보내는 방식, 보내는 데이터 크기에 제한이 있음(256~4096바이트)
+    
+    - post : http헤더에  데이터를 넣어 보내는 방식
+    
+    - name : form태그의 고유이름 지정(form을 구분하기 위함)  input시 반드시 name이 들어간다고 생각하면 됨
+    
+    - input : 사용자로부터 데이터를 입력 받기 위한 태그
+ 
+    - placeholder : 입력에 대한 가이드를 제공하는 것
+    - maxlength="5": 입력이 5글자로 제한
+    - size ="3": 폭이 줄어듬
+    - hidden : 값이 안보이게 함 p hidden: input type ="hidden" name ="input3" /p
+    - button : 기능 구현을 해줄 것임 p button: input type ="button" value ="눌러봐" onclick="btnClick()" /p
+    - checkbox : 다중 선택이 가능 checked 옵션 쓰면 체크가 되어있는 상태가 됨(라디오도 마찬가지)
+    - radio : 1개 선택만 가능(속성이 같아야함)
+    - file : input type ="file" name ="file" multiple 뒤에 써주면 여러 파일 업로드됨
+    - 뒤에 accept 써주면 파일 스타일이 제한됨 ex).gif,.jpg
+    - 입력하지 않으면 안넘어가게 함? 뒤에 required 써주면 됨
+                             
