@@ -352,5 +352,36 @@
     - select
     - optgroup label ="외제차"
     - option value ="bmw3"bmw3/option
-        
-                   
+ ## 3월 25일 수(날씨 좋음)        
+ - 페이지 이동    
+    - 1. a 태그를 이용한 페이지 이동
+    - a href="https://nid.naver.com/user2/help/idInquiry.nhn?lang=ko_KR" /a
+    - 페이지만 이동할때
+    - 2.form태그를 이용한 페이지 이동
+    - 사용자가 입력한 값을 가지고 이동
+ - 회원가입페이지로 이동 ->a태그
+ - 아이디찾기페이지로 이동 ->a태그
+ - 검색-> 폼태그(사용자가 입력한 값을 가지고 가야하니까)
+- name 프론트에서 굉장히 중요 나중에 자료 받을 때 name으로 찾음
+- form action="https://search.naver.com/search.naver" method="get"
+- input type= "text" name="query"
+- input type="submit" value"검색"
+- /form
+- css 
+ - 웹페이지 구성 : 내용과 꾸미는 부분 분리 ,디자인 수정시 서로 영향 최소화
+ - style, stylesheet 
+ - p{ color : red;}
+ - 선택자 속성 값
+- stylesheet 종류
+ - 1.내부
+ - 2.외부
+- 선택자 :html문서 내부에서 스타일을 적용하기 위한 요소를 선택하는 것 
+ - 전체 선택자 :*(대부분 *쓰면 전체의미) *{}
+ - 태그 선택자 : 태그 이름(h1,p,li 등등)
+ - 아이디 선택자 : #아이디명(고유식별자 개념있음... 겹쳐쓰지 말기 나중에 자바스크립트에서 에러남)
+ - 클래스 선택자 : .클래스명
+ - 후손 선택자 : 선택자 선택자
+ - 구조 선택자 : 
+ - 반응 선택자 : 선택자 active, 선택자 hover
+ - 링크 선택자 : link/visited(보라색)
+ - 부정 선택자 : not
