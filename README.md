@@ -407,14 +407,18 @@
     - ex) input[name=id] input 태그 중 name 속성의 값이 id인 요소 선택
 - 적용 방법에 따른 우선 순위 : 태그스타일-> class스타일 -> id스타일-> 인라인 스타일->!important
 - 소스 순서에 따른 순위 : 나중에 작성된 스타일 
- ## 3월 26일 목(날씨 화창) 
- - 텍스트 스타일
- - text-transform 영문자를 표시할 때 대소문자를 바꿀 수 있는 속성
- - text-shadow : 텍스트에 그림자 효과를 주는 속성, 선택자{text-shadow:none 또는 (가로 세로 번짐 색
- - 상);
- - white-space : 공백을 처리해 주는 속성
- - normal 공백 여러개를 하나로 처리(개행 노)
- - pre가 붙으면 개행처리는 됨
- - letter-spacing/line-spacing
-   - letter-spacing: 낱개 글자의 간격을 조정하는 속성
-   - 
+## 3월 26일 수(날씨 화창)
+- CSS 단위 구성
+- em 부모요소의 크기가 기준
+- 상대 크기에서 % 많이 씀
+- 색상 표현
+    - 영문색 이름, 16진수 표현,rgb,rgba(투명도 조절해줌 0으로 갈 수록 투명  1로 갈수록 불투명)
+- 텍스트 스타일
+  - font family : 기본 형식 선택자{font-family:글꼴1[,글꼴2,글꼴3];}, 최대3개까지 지정가능
+  - 글꼴이 모두 없으면 브라우저 기본 글꼴로 적용
+  - 기본 글꼴, 외부에서 글꼴 가져오는 것 
+  - font -size: 글자의 크기를 조절하는 속성 선택자{font-size : 숫자단위;}
+  - font-weight: 글자의 굵기를 조절하는 것 (bold 굵게 표시,400:noraml,900:max
+  - font-variant : 영어를 작은 대문자로 표시해주는 속성 (대문자가 작게 나옴)
+  - font-style: 글자를 이텔릭체로 표시하는 속성 선택자{font-style:normal또는 italic또는 olique;}
+  - font : 글꼴 속성을 모아서 표현할 수 있는 스타일 속성
