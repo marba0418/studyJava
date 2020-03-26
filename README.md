@@ -407,7 +407,7 @@
     - ex) input[name=id] input 태그 중 name 속성의 값이 id인 요소 선택
 - 적용 방법에 따른 우선 순위 : 태그스타일-> class스타일 -> id스타일-> 인라인 스타일->!important
 - 소스 순서에 따른 순위 : 나중에 작성된 스타일 
-## 3월 26일 수(날씨 화창)
+## 3월 26일 수(날씨 곧 비올듯)
 - CSS 단위 구성
 - em 부모요소의 크기가 기준
 - 상대 크기에서 % 많이 씀
@@ -422,3 +422,8 @@
   - font-variant : 영어를 작은 대문자로 표시해주는 속성 (대문자가 작게 나옴)
   - font-style: 글자를 이텔릭체로 표시하는 속성 선택자{font-style:normal또는 italic또는 olique;}
   - font : 글꼴 속성을 모아서 표현할 수 있는 스타일 속성
+- 문단 스타일
+  - text align: 문자 위치를 조정(정렬)하는 속성
+  - text identify
+  - line height 문장끼리의 높이 조절
+  - text-overflow :영역을 벗어나는 텍스트 
