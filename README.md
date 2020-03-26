@@ -407,3 +407,14 @@
     - ex) input[name=id] input 태그 중 name 속성의 값이 id인 요소 선택
 - 적용 방법에 따른 우선 순위 : 태그스타일-> class스타일 -> id스타일-> 인라인 스타일->!important
 - 소스 순서에 따른 순위 : 나중에 작성된 스타일 
+ ## 3월 26일 목(날씨 화창) 
+ - 텍스트 스타일
+ - text-transform 영문자를 표시할 때 대소문자를 바꿀 수 있는 속성
+ - text-shadow : 텍스트에 그림자 효과를 주는 속성, 선택자{text-shadow:none 또는 (가로 세로 번짐 색
+ - 상);
+ - white-space : 공백을 처리해 주는 속성
+ - normal 공백 여러개를 하나로 처리(개행 노)
+ - pre가 붙으면 개행처리는 됨
+ - letter-spacing/line-spacing
+   - letter-spacing: 낱개 글자의 간격을 조정하는 속성
+   - 
