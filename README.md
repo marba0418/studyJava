@@ -427,3 +427,8 @@
   - text identify
   - line height 문장끼리의 높이 조절
   - text-overflow :영역을 벗어나는 텍스트 
+- line-height: 50px;/*글자테스트 위에 높이를 주는 것 박스에서 높이를 맞춰주는 것임*/
+-clip은 영역 넘어가면 짤림
+- ellipsis 는 영역이 넘어가면 ...으로 표시됨
+- ul과 ol 차이점?
+- 배경스타일
