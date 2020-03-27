@@ -441,3 +441,7 @@
 - static : 요소를 문서의 흐름에 맞춰 배치(default)
 - relative : 위치 지정 가능
 - absolute
+- visibility 페이지에 특정 속성을 보이거나 보이지 않게 하는 속성
+- visible,hidden
+- 애니메이션 : 속성을 점차적으로 변화시켜 움직이는 효과를 내는 기법
+  - transform 속성 : 페이지에서 요소들을 변형시키려면 transform 속성과 변형 함수를 이용
