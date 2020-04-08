@@ -445,3 +445,7 @@
 - visible,hidden
 - 애니메이션 : 속성을 점차적으로 변화시켜 움직이는 효과를 내는 기법
   - transform 속성 : 페이지에서 요소들을 변형시키려면 transform 속성과 변형 함수를 이용
+## 4월 08일 수(날씨 추움)
+- createElement는 요소를 만듬 var element = document.createElement("tr");
+- createTextNode는 선택한 요소에 텍스트를 추가함 var textNode1 = document.createTextNode(name);
+- appendChild선택한 요소안에 자식요소를 추가함  appendChild선택한 요소안에 자식요소를 추가함  
