@@ -449,3 +449,11 @@
 - createElement는 요소를 만듬 var element = document.createElement("tr");
 - createTextNode는 선택한 요소에 텍스트를 추가함 var textNode1 = document.createTextNode(name);
 - appendChild선택한 요소안에 자식요소를 추가함  appendChild선택한 요소안에 자식요소를 추가함  
+- 이벤트 : 웹페이지에서 어떠한 행위(사용자의 행동)가 발생한 것이 이벤트
+- 이벤트 활용 : 이벤트 속성과 이벤트핸들러(함수)를 연동하여 이벤트 발생시 특정 이벤트가 나오게 함
+- 고전 이벤트 : 클릭시 이벤트 실행
+- var 변수 = document.getElementById("아이디명")
+- 인라인 이벤트
+- 표준이벤트 모델 : W3C에서 공식적으로 지정한 이벤트 모델
+- 이벤트 전달 
+   - 이벤트 버블링: 자식에서 부모노드로 올라가면서 이벤트가 실행 
