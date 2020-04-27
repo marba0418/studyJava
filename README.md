@@ -535,4 +535,21 @@
  - relative: static의 원래 위치부터 위치를 계산(배치 하지 않는 경우 static과 동일)
  - absolute : 문서의 원래 위치와 상관없이 배치(부모 요소 중 가장 가까운 relative 요소 기준으로 배치)
  - fixed: 브라우저 화면의 상대위치
-
+ 
+ ## 4월 27일 월(바람 많음)
+ - JSTL 태그 종류
+ - Core Tags 변수와 url, 조건문,반복문 등의 로직과 관련된 JSTL 문법 제공
+ - <c:set>
+ - 변수 타입을 별도로 선언하지 않음
+ - 초기값을 반드시 입력
+ - <% int num1 = 10, num2=20>
+ - <c:remove> 삭제
+ - <c:out> 데이터를 출력할때 사용하는 태그
+ - <c:if>
+ - 자바의 if문과 비슷한 역할
+ - <c:choose>
+ - 자바의 switch(if~else if)문과 비슷한 역할을 하는 태그
+ - <c:when>,<c:otherwise>태그와 함께 사용되는데
+ - <c:forEach> 자바의 forEach
+ - <c:forTokens> 문자열에 포함된 구분자를 통해 토큰을 분리해서 반복처리
+ 
