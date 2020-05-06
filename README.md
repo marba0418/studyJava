@@ -557,4 +557,65 @@
  - MVC 패턴
  - 사용자 요청처리(비즈니스 로직)은 servlet처리
  - 화면 구현은 jsp
+
+ ## 5월 6일 수(날씨 더움)
  
+ - Filter : client와 server 사이에서 request와 response 객체를 필터가 먼저 받아 사전 사후 작업 등 공통적으로 필요한 부분을 처리하는 것
+ - client와 Servlet사이에 거름막이 생겼다고 생각하면 됨
+ - 웹 브라우저가 필요한 Servlet을 호출할 경우, filter가 대신 호출되어 전달받은 정보를 수정하고 Servlet에게 넘기는 일종의 경유지 역할을 수행
+ 
+ - init : 웹컨테이너가 filter를 호출할 경우 해당 메소드가 호출되어 filter 객체를 생성하며 초기화 한다.
+ - doFilter 수행될 때 구동하는 메소드로 요청 객체와 응답 객체를 사용해 일련의 작업을 수행한 뒤, chain을 통해 가공된 값을 목적지로 전송한다.
+ 
+ - ajax(Asynchronous JavaScript And XML) : 서버로부터 데이터를 가져와 전체 페이지를 새로 고치지 않고 일부만 로드할 수 있게 하는 기법으로 
+ -  비동기식 요청을 보내는데 필요한 기술 
+    - 장점 : 비동기식 방식으로 웹서버의 응답을 기다리지 않고 데이터를 빠르게 처리 , 페이지 리로딩 없이 처리
+    - 단점 : 한페이지에 지속적으로 사용시 리소스가 쌓여 페이지가 느려짐,스크립트로 되어있어 에러 발생시 디버깅이 어려움
+ - 동기식 처리모델 : 페이지가 로드 되는 동안 브라우저는 script문이 실행되면 그 실행이 종료될때 까지 기다렸다가 종료되면 나머지 페이지를 
+ - 로드하는 방식으로 실행되는 방식
+ - 비동기식 처리모델 : 페이지가 로드되는 동안 브라우저는 먼저 서버데이터 요청 스크립트문을 실행한 후 나머지 페이지를 계속 로드하고 페이지와
+ - 상호 작용을 처리하며 스크립트 요청 데이터를 기다리지 않는다. 그리고 요청 데이터가 도착하면 그때 이벤트가 발생하면서 지정된 함수가 호출되어
+ - 실행되는 방식
+ 
+ - JavaScript ajax
+ - 처리절차 
+ - 1. 스크립트 문에 요청을 위한 XMLHttpRequest
+ - 비동기식으로 서버에 요청(Request)을 보내기 위한 객체로 요청 및 응답을 처리
+ - 속성 
+ - onreadystatechange readyState속성이 변경될 때 호출되는 메소드를 저장하는 변수
+ - readyState 객체의 상태를 저장하는 변수
+ - responseText 응답 결과를 문자열로 저장하는 변수
+ - responseXML 응답 결과를 XML data로 저장하는 변수
+ - status
+ - readyState status 속성 값을
+ - 200 요청성공
+ - 404(Not Found) 페이지 없음
+ - 500()서버 오류 발생
+ - 1. XMLHttpRequest객체 생성
+ - IE7 이상, safari, firefox,opera, chrome
+ - var httpRequest
+ - 2. 응답 처리 함수 설정
+ - XMLHttpRequest 객체 생성 후 속성값에 저장
+ - 3.요청대상 설정/요청 처리
+ - XMLHttpRequest객체 생성 후 open메소드로 요청대상 설정
+ - var httpRequest
+ - 4. 응답처리
+ - JSON과 XML 
+ - JSON: JavaScript Object Notation 
+ - {key1:value1,key2:value2,key3:value3}
+ - XML : Extensible Markup Language의 약자로 HTML과 매우 비슷한 문자 기반의 마크업 언어로
+ - 사람과 기계가 동시에 읽기 편한 구조로 되어있음
+ - 형식 
+ - <태그명1>값1</태그명1>
+ - <태그명2>값2</태그명2>
+ - <태그명3>값3</태그명3>
+ - $.ajax()의 주요 속성
+ - 속성명 내용
+ - url 데이터를 전송할 URL의 주소 설정
+ - data 서버에 전송할 데이터를 key:value로 처리
+ - $.ajax()를 이용하여 처리
+ - $.ajax({url:text:})
+ 
+ 
+ 
+    
