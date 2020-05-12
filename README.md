@@ -616,6 +616,9 @@
  - $.ajax()를 이용하여 처리
  - $.ajax({url:text:})
  
- 
+ ## 5월 12일 화(날씨 추움)
+ - Ajax : JavaScript의 라이브러리 중 하나이며 Asynchronous JavaScript And Xml(비동기식 자바스크립트와 xml)의 약자
+ - 브라우저가 가지고 있는 XMLHttpRequest 객체를 이용해서 전체 페이지를 새로 고치지 않고도 페이지의 일부만을 위한 데이터를 로드하는 기법
+ - 비동기통신, 클라이언트와 서버간에 XML 데이터를 주고받는 기술  
  
     
