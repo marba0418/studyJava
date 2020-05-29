@@ -727,3 +727,17 @@
 - gson
 - json구조를 띄는 직렬화된 데이터를 JAVA의 객체로 역직렬화, 직렬화 해주는 자바 라이브러리
 - JSONObject-> JAVA Object 또는 그 반대의 행위를 돕는 라이브러리
+ ## 5월 29일 금(날씨 더움)
+  
+-Spring MVC
+-Spring MVC Model : Spring MVC는 View, Controller, Model 부분을 유지보수 및 확장성을 고려하여 설계
+-Spring MVC 요소
+- DispatcherServlet 유일한 Servlet 클래스로서 HTTP 프로토콜을 통해 들어오는 모든 요청을 가장 먼저 처리하는 Front Controller
+- HandlerMapping 클라이언트 요청을 어떤 Controller가 처리할 지 URL Mapping값을 가지고 있음
+- Controller 실질적인 클라이언트 요청을 처리
+- ViewResolver : Controller가 반환환 View 이름으로 실행될 jsp경로를 가지고 있음
+- View 실제 클라이언트들에게 보여질 페이지
+
+- java : Java Source파일(package, class,...)
+- resources : 설정파일(mybatis-config.xml,...)
+- webapp : VI
