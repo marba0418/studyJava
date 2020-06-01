@@ -741,3 +741,7 @@
 - java : Java Source파일(package, class,...)
 - resources : 설정파일(mybatis-config.xml,...)
 - webapp : VI
+ ## 6월 01일 수(날씨 더움)
+- Spring setting 
+- 1. 라이브러리 추가 
+- pom.xml에서 mybatis, mybatis-Spring추가
