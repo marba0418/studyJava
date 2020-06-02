@@ -741,7 +741,17 @@
 - java : Java Source파일(package, class,...)
 - resources : 설정파일(mybatis-config.xml,...)
 - webapp : VI
- ## 6월 01일 수(날씨 더움)
+ ## 6월 01일 월(날씨 더움)
 - Spring setting 
 - 1. 라이브러리 추가 
 - pom.xml에서 mybatis, mybatis-Spring추가
+ ## 6월 02일 화(날씨 비옴)
+- AOP
+- Joinpoint : 클라이언트가 호출하는 모든 비즈니스 메소드, 공통적으로, 일반적으로 Service의 모든 클래스(서비스의 모든 메소드)
+- Pointcut : 필터링 된 조인 포인트
+- Pointcut의 Around 메소드 호출 자체를 가로채 비즈니스 메소드 실행 전후에 처리할 로직을 삽입가능(스톱워치같은?)
+- Advice : Pointcut에 적용할 공통 기능의 코드
+- JoinPoint Interface 
+- JoinPoint Interface 메소드
+- getArgs() : 메소드의 매개 변수를 반환
+- getSignature() : 대상 객체 메소드의 설명(메소드명, 리턴 타입 등)변환
