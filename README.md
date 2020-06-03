@@ -801,3 +801,8 @@
 - applicationContext.xml : spring에서 사용할 설정(bean객체 생성, annotation사용 선언,component-scan...)
 - mybatis-config.xml : 마이바티스 관련 설정(null, 별칭설정)
 - mapper.xml: 동작할 쿼리문 들어 있음 
+
+- 순서
+- base-package : or.kr.iei
+- or.kr.member.controller
+- or.kr.board.controller
