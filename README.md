@@ -806,3 +806,7 @@
 - base-package : or.kr.iei
 - or.kr.member.controller
 - or.kr.board.controller
+
+- JAVA 개발 환경
+- JDK(Java Development Kit) : 자바 개발 도구
+- JRE(Java Runtime Environment) :  자바 실행 환경
