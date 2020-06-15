@@ -867,3 +867,11 @@
 - 98:D3:11:FD:5E:45
 - 아두이노로 와이파이 할 때는 setup() mySerial.begin(115200);// 와이파이여서 115200써준다.
 - 시리얼 모니터에 Both NL& CR 체크해주기
+- 와이파이 할 때 시리얼 모니터에 AT+UART_DEF=9600,8,1,0,0으로 바꾸고
+- setup에서  mySerial.begin(9600)으로 바꾸고 시리얼 모니터에 AT 입력
+- 시리얼 모니터에 AT+CWMODE=1 와이파이 연결한다는 의미
+- AT+CWLAP 치면 지금 잡을 수 있는 와이파이 목록이 뜬다.
+- AT+CWJAP 와이파이 이름이랑 비번 치면 해당 와이파이에 연결됨
+- AT+CWJAP="A_CLASS","khacademy*"
+- AT+CIFSR
+- cmd에서 ping 나의 아이피주소
