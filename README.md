@@ -875,3 +875,4 @@
 - AT+CWJAP="A_CLASS","khacademy*"
 - AT+CIFSR
 - cmd에서 ping 나의 아이피주소
+- 와이파이 예제에서 Web Server 선택 하면 아두이노가 만든 와이파이 서버가 나옴 
