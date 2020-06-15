@@ -859,3 +859,7 @@
 - 연결 된 이후에느 제한없이 양방향 통신이 가능
 - SoftwareSerial 라이브러리 : Digital pin의 0번과 1번만이 해당 기능을 수행
 - name.end(), name.begin(speed).. : name은 객체를 만들었다고 생각하면 됨
+
+- AT: 블루투스가 연결되었다.
+- AT+NAME->AT+NAMEZZZ: 블루투스 이름 지정
+- AT+PIN->AT+PIN0000: 블루투스 비번 지정
