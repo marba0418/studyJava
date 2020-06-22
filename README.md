@@ -939,3 +939,39 @@
 - lcd.setCursor(0,0);
 - lcd.write(btye(0));
 - 1인 경우는 표현되고, 0인 부분은 표현되지 않는 모양으로 출력
+ ## 6월 22일 월(날씨 더움)
+- IoT (Internet of Things)란 각종 사물에 센서와 통신 기능을 내장하여 인터넷에 연결하는 기술로 유선/무선 통신을 통해 각종 사물을 연결하는 기술
+- 아두이노를 통한 IoT
+- 1. Ethernet: LAN(Local Area Network)을 위해 개발된 근거리 유선 네트워크 통신망 기술로 CSMA/CD 프로토콜을 이용하여 통신하며 
+- IEEE 802.3에 표준으로 정의되어 있음
+- 2.WIFI : 무선 접속장치(Access Point)가 설치된 곳의 일정 거리 안에서 초고속 인터넷을 할 수 있는 근거리 통신망
+- 3.Bluetooth : 근거리에서 전자기기 간에 연결없이 주파수로 데이터를 교환할 수 있게 하는 기술로 10m안의 거리에서 저전력으로 데이터를 주고받을 수 
+- 있는 기술
+- Bluetooth
+- Bluetooth의 Master/Slave
+- 블루투스는 근거리에서 전자기기 간에 선없이 연결되어 통신하는 기술
+- 전자기기가 연결되기 위해서는 한쪽에서 신호를 내보내고 다른 한쪽에서 해당 신호에 동기화가 되어야 함
+- 블루투스의 경우Master기기가 생성하는 주파수에 Slave기기를 동기화 시키는 개념
+- 연결의 주체를 Master가 가지고 있음
+- 연결이 된 이후에는 제한없이 양방향 통신이 가능
+- SoftwareSerial 라이브러리
+- 데이터를 입출력 하기 위해서는 데이터를 전송하는 pin과 데이터를 수신하는 pin이 각각 필요한데 보드의 기본설정으로는 Digital pin의 0번과
+- 1번만이 해당기능 수행이 가능
+- 일반 입출력 데이터 핀을 RX, TX핀으로 동작할 수 있게 해주는 라이브러리
+- SoftwareSerial 함수
+- SoftwareSerial name(rx,tx) : SoftwareSerial 클래스의 생성자로 RX,TX핀을 지정하면 지정한 이름으로 객체 사용
+- name.begin(speed) : 시리얼 통신을 초기화하고 전송속도를 설정
+- name.end(): 시리얼 통신을 종료
+- name.available(): 수신 버퍼에 저장되어 있는 데이터의 바이트 수 반환, 수신 대기 상태가 아니거나 버퍼가 비어있는 경우 0을 반환하며,
+- 일반적으로 데이터를 받기를 기다릴 때 if문을 이용하여 사용
+- name.read(): 수신 버퍼의 첫번째 문자를 반환하며, 반환한 데이터를 수신 버퍼에서 제거(Serial.read()와 같은 역할)
+- name.readString(): 수신 버퍼의 데이터를 문자열로 반환
+- name.print(value) : value를 시리얼 포트로 출력
+- name.write(character): 바이트 단위의 데이터 전송, Serial.write()와 달리 바이트 배열을 전송하는 기능은 없음
+- Bluetooth의 AT Command(HC-06모듈 기준)
+- Command / 응답값/ 설명
+- AT/OK/블루투스 모듈 연결확인
+- AT+NAME/OK/블루투스 이름확인,설정(default:hc-06)
+- AT+PIN/OK/블루투스 비밀번호 확인,설정(default:1234)
+- AT+ROLE/OK/Master,Slave모드 설정(0:Slave, 1:master) default: slave
+- AT+BAUD1~8/ OK/통신속도설정(1~8 숫자마다 통신속도 지정)4:9600(default),8:115200bps 등등
