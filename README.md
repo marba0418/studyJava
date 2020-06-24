@@ -975,3 +975,12 @@
 - AT+PIN/OK/블루투스 비밀번호 확인,설정(default:1234)
 - AT+ROLE/OK/Master,Slave모드 설정(0:Slave, 1:master) default: slave
 - AT+BAUD1~8/ OK/통신속도설정(1~8 숫자마다 통신속도 지정)4:9600(default),8:115200bps 등등
+ ## 6월 23일 화(날씨 장마)
+ - DI Annotation 
+ - bean으로 사용될 클래스에 특별한 Annotation을 부여하고 Spring컨테이너가 Annotion을 통해 자동으로 bean을 등록하는 방식, 빈 스캐닝(bean scanning)을 통한 자동인bean등록 기능
+ - @Service : Service Layer Annotation 으로 비즈니스 로직을 가진 클래스에 사용
+ - @Repository : Psersistence Layter Annotion 으로 영속성(파일, DB)을 가진 클래스에 사용
+ - @Autowired: 주로 변수 위에 설정하여 해당 타입 객체를 컨테이너에서 찾아서 자동으로 주입
+ - @Qualifier: @Autowired와 같이 사용되며, 특정 객체의 이름을 이용하여 의존성을 주입할 때 사용, 
+ - : @Autowired를 하려는 상황에 해당 타입의 객체가 컨테이너에 2개 이상 존재하는 경우 어떤 객체를 주입할 지 결정 할 수 없어 에러가 발생하는데 이를 해결함
+ 
