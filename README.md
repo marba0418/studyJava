@@ -990,3 +990,13 @@
 - 복호화(Decryption)
 - 암호문을 평문으로 변환하는 과정
 - 암호문("adfefwer")-> 복호화 -> 평문("123456")
+ ## 6월 26일 금(날씨 흐림)
+- jQuery 객체조작
+  - each()메소드
+  - 객체나 배열의 요소를 검사하는 메소드
+  - $.each(배열이름,function(index,item){})
+  - 지정한 배열을 0번부터 불러와 순번을 index, 값을 item에 넣는 메소드
+  - item은 Element로 javascript객체이므로 jQuery메소드 사용 불가
+  - $(선택자).each(function(index,item){})
+  - 선택자로 선택한 요소를 index순번으로 item에 요소값 조작시 사용
+  - 선택된 요소를 차례로 조작할 때 사용
