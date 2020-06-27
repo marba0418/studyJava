@@ -1000,3 +1000,37 @@
   - $(선택자).each(function(index,item){})
   - 선택자로 선택한 요소를 index순번으로 item에 요소값 조작시 사용
   - 선택된 요소를 차례로 조작할 때 사용
+ ## 6월 27일 토(날씨 더움)
+ - HTML(Hyper Text Markup Language)
+ - 웹에서 정보를 표현할 목적으로 만든 마크업 언어
+ - 기본구조
+   - 문서 유형 <!doctype html>
+   - 문서 시작과 끝 <html lang="ko"></html>
+   - 머리 <head></head> 문서의 각종정보와 문서 자체에 대한 설명 내용<title>,<meta>,<link>,<style>,<script> 등 사용
+   - 몸체 <body></body> 화면에 출력해서 보여주는 모든 정보/내용 head들어가는 태그를 제외하고 모든 태그를 사용
+ - jQuery : 존레식에 의해 개발된 경량 javascript라이브러리
+   - Write Less DO More(보다 간단히 많은 것을) 모토로 복잡했던 코드를 손쉽게 구현
+   - 1) DOM과 관련된 처리 쉽게 구현
+   - 2) 일관된 이벤트 연결 쉽게 구현
+   - 3) 시각적 효과 쉽게 구현
+   - 4) Ajax 애플리케이션 쉽게 개발
+ - jQuery 연결
+   - CDN(Content Delivery Network)을 통한 연결: 온라인으로 js파일을 불러와서 실행
+   - 파일 다운로드 연결(오프라인에서 사용): jQuery 홈페이지에서 js파일 다운로드
+ - <script type='text/javascript' src='http://code.jquery.com/jquery-버전.js></script>
+ - jQuery를 연결하지 않으면 스크립트 사용시 에러가 발생
+ - jQuery 사용
+ - $(선택자).메소드명(속성,값); di 가장 기본적인 형태
+ - $("p").css('color','red'); p태그의 글씨색을 red로 변경
+ - $는 jQuery를 선언하거나 접근할 때 사용하며, 같은 표현으로는 jQuery가 존재 
+ - $(선택자).메소드명()==jQuery(선택자).메소드명()
+ - $(document).ready()
+ - javascript의 window.onload와 같은 개념의 메소드로 페이지 내용을 로드한 후 ready()메소드를 실행
+ - $(document).ready(function(){
+ - });
+ - 축약하여 사용도 가능
+ - $(function(){
+ - }) 
+  
+  
+  
