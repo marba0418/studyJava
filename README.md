@@ -1047,4 +1047,11 @@
 - 3. 리턴 타입이 동일해야 한다.
 - 4. private 메소드의 오버라이딩이 불가능하다.
 - 5. 접근제어 지시자는 수정이 가능하지만 부모의 것보다 같거나 넓은 범위로 가능하다.(default -> public으로 가능, public ->private 불가능)  
-  
+## 7월 1일 수(날씨 좋음)
+- @RequestMapping 어노테이션
+- Spring 웹 애플리케이션에서 가장 자주 사용되는 annotation
+- @RequestMapping은 http request로 들어오는 url을 특정 controller 클래스나 메소드로 연결시키는 역할
+- @RequestMapping은 controller에 있어서 class에 적용할수도 있고 특정 method에 적용할수도 있다.
+- @ResponseBody 어노테이션이란?자바 객체를 HTTP 요청의 body 내용으로 매핑하는 역할
+-  produces: 출력하고자 하는 데이터 포맷 정의
+- @RequestMapping(value="/selectAllMember.do", produces ="application/json;charset=utf-8")  
