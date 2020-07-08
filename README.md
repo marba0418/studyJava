@@ -1055,3 +1055,14 @@
 - @ResponseBody 어노테이션이란?자바 객체를 HTTP 요청의 body 내용으로 매핑하는 역할
 -  produces: 출력하고자 하는 데이터 포맷 정의
 - @RequestMapping(value="/selectAllMember.do", produces ="application/json;charset=utf-8")  
+## 7월 8일 수(날씨 더움)
+- mybatis 동적쿼리 :preparestatement , statement
+- 프로시저 : 디비의 함수 , 요새 쓰는 추세인지?
+- Spring @Controller ,Service, Autowired , Repository, RequestMapping, ResponseBody, RequestBody, Qualifier, RestController
+- Aop:관점지향, pointcut,SpringContext,interceptor,filter,  filter와 interceptor의 차이
+- db query: inner join, outer join, left join, leftout join, right join 차이점
+- spring 기본 개념
+- logger
+- 접근제어지시자
+- 생성자
+- 기본형, 참조형 함수  
