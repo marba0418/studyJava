@@ -1066,3 +1066,11 @@
 - 접근제어지시자
 - 생성자
 - 기본형, 참조형 함수  
+
+ ## 07월 11일 토(날씨 더움)
+- DML
+- DELETE 
+- 제약조건으로 인한 삭제 불가 시 강제 삭제
+- 제약조건 비활성화
+- ALTER TABLE TEST02
+- DISABLE CONSTRAINT SYS_C008161 CASCADE;
